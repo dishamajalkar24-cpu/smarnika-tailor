@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smarnika Ladies Tailoring — Bespoke Blouse Stitching &amp; Alterations | Diva (East)</title>
+  <meta name="description" content="Smarnika Ladies Tailoring in B.R. Nagar, Diva (East). Custom blouse stitching, saree fall & pico, bedding (₹50), alteration (₹30), and home service available. Stitching with Style..." />
+  <link id="favicon" rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1_NYtGTTTDJfIfh3Qmjww3utKNWdzvQh8" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            plum: "#4A0E2E",
+            plumDark: "#2E071C",
+            burgundy: "#6B163C",
+            ivory: "#FAF6F0",
+            cream: "#F4ECE1",
+            blush: "#E6C7C2",
+            gold: "#C59B4E",
+            goldLight: "#E2C27D",
+            charcoal: "#24191E",
+            muted: "#6B5860",
+            sage: "#2E6F40"
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', "Georgia", "serif"],
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Devanagari"', "sans-serif"],
+            marathi: ['"Noto Sans Devanagari"', '"Plus Jakarta Sans"', "sans-serif"]
+          },
+          boxShadow: {
+            boutique: "0 20px 50px -15px rgba(74, 14, 46, 0.16)",
+            card: "0 10px 30px -10px rgba(74, 14, 46, 0.12)"
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #FAF6F0;
+      color: #24191E;
+      font-family: "Plus Jakarta Sans", "Noto Sans Devanagari", sans-serif;
+      overflow-x: hidden;
+    }
+    .font-display {
+      font-family: "Cormorant Garamond", Georgia, serif;
+    }
+    .boutique-pattern {
+      background-image:
+        radial-gradient(circle at 12% 18%, rgba(197, 155, 78, 0.09) 0%, transparent 42%),
+        radial-gradient(circle at 88% 12%, rgba(74, 14, 46, 0.07) 0%, transparent 45%),
+        radial-gradient(circle at 75% 85%, rgba(230, 199, 194, 0.25) 0%, transparent 45%);
+    }
+    .glass-panel {
+      background: rgba(250, 246, 240, 0.88);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(197, 155, 78, 0.28);
+    }
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .filter-btn.active {
+      background-color: #4A0E2E;
+      color: #FAF6F0;
+      border-color: #4A0E2E;
+    }
+    @media (max-width: 767px) {
+      body {
+        padding-bottom: 76px;
+      }
+    }
+  </style>
+  <script>
+    function handleDriveImgError(imgEl, fileId, fallbackTitle) {
+      if (!imgEl || !fileId) return;
+      const step = parseInt(imgEl.dataset.fbStep || "0", 10);
+      if (step === 0) {
+        imgEl.dataset.fbStep = "1";
+        imgEl.src = `https://drive.google.com/uc?export=view&id=${fileId}`;
+      } else if (step === 1) {
+        imgEl.dataset.fbStep = "2";
+        imgEl.src = `https://drive.google.com/thumbnail?id=${fileId}&sz=w1200`;
+      } else {
+        imgEl.onerror = null;
+        const label = encodeURIComponent(fallbackTitle || "Smarnika Tailoring");
+        imgEl.src = `https://placehold.co/800x600/F4ECE1/4A0E2E?text=${label}`;
+      }
+    }
+  </script>
+</head>
+<body class="boutique-pattern selection:bg-plum selection:text-ivory">
+
+  <!-- Top Announcement Strip -->
+  <div class="bg-plumDark text-ivory text-xs sm:text-sm py-2 px-4 border-b border-gold/30">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-goldLight animate-pulse"></span>
+        <span data-i18n="top_banner">Home Service Available in Diva (East) • Blouses from ₹250 • Alteration ₹30 • Bedding ₹50</span>
+      </div>
+      <div class="flex items-center gap-4 text-goldLight font-medium">
+        <a href="tel:+919321784626" class="hover:underline">📞 93217 84626</a>
+        <a href="tel:+917410591695" class="hover:underline">📞 74105 91695</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Header -->
+  <header id="navbar" class="sticky top-0 z-40 transition-all duration-300 bg-ivory/90 backdrop-blur-md border-b border-gold/20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-3">
+      <a href="#top" class="flex items-center gap-3 group shrink-0">
+        <img
+          src="https://lh3.googleusercontent.com/d/1bmzut0EO2YhdJL6rrAnOsQlu9nMWrgZz"
+          alt="Smarnika Ladies Tailoring Logo"
+          class="h-12 sm:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          onerror="handleDriveImgError(this, '1bmzut0EO2YhdJL6rrAnOsQlu9nMWrgZz', 'Smarnika Logo');"
+        />
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-charcoal">
+        <a href="#story" class="hover:text-plum transition-colors" data-i18n="nav_story">Our Story</a>
+        <a href="#services" class="hover:text-plum transition-colors" data-i18n="nav_services">Services &amp; Rates</a>
+        <a href="#gallery" class="hover:text-plum transition-colors" data-i18n="nav_gallery">Blouse Gallery (16)</a>
+        <a href="#process" class="hover:text-plum transition-colors" data-i18n="nav_process">How It Works</a>
+        <a href="#contact" class="hover:text-plum transition-colors" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="inline-flex rounded-full p-1 bg-cream border border-gold/40 text-xs font-semibold" role="group" aria-label="Language toggle">
+          <button type="button" id="btn-en" onclick="setLanguage('en')" class="px-3 py-1 rounded-full bg-plum text-ivory transition">English</button>
+          <button type="button" id="btn-mr" onclick="setLanguage('mr')" class="px-3 py-1 rounded-full text-charcoal hover:text-plum transition font-marathi">मराठी</button>
+        </div>
+
+        <a
+          href="https://wa.me/919321784626?text=Hello%20Smarnika%20Ladies%20Tailoring%2C%20I%20would%20like%20to%20book%20a%20blouse%20stitching%20appointment."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-plum hover:bg-burgundy text-ivory text-xs sm:text-sm font-semibold shadow-card transition"
+        >
+          <span>💬</span>
+          <span data-i18n="whatsapp_us">WhatsApp Us</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="top" class="relative pt-10 pb-16 lg:pt-14 lg:pb-24 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex flex-wrap items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-cream border border-gold/40 text-xs font-medium text-plum">
+            <span class="w-2 h-2 rounded-full bg-plum"></span>
+            <span data-i18n="hero_badge">HOME SERVICE AVAILABLE</span>
+            <span class="text-gold">•</span>
+            <span>10:00 AM – 9:00 PM</span>
+            <span class="text-gold">•</span>
+            <span id="studio-status" class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold">Open Now</span>
+          </div>
+
+          <div class="space-y-2">
+            <p class="font-display italic text-xl sm:text-2xl text-burgundy">
+              Stitching with Style... <span class="font-marathi not-italic text-lg sm:text-xl">सौंदर्य तुमच्या शैलीत...</span>
+            </p>
+            <h1 class="font-display text-4xl sm:text-6xl lg:text-[64px] font-bold leading-[1.08] text-plumDark" data-i18n="hero_title">
+              Bespoke Blouse Stitching &amp; Alterations Crafted for Your Perfect Fit.
+            </h1>
+          </div>
+
+          <p class="text-base sm:text-lg text-muted max-w-2xl leading-relaxed" data-i18n="hero_subtitle">
+            Trusted by women across B.R. Nagar, Diva (East) for custom designer blouses, saree fall &amp; pico, bedding (₹50), and precision alterations (₹30)—with convenient doorstep measurement pickup &amp; delivery.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 pt-2">
+            <a href="#gallery" class="px-7 py-3.5 rounded-full bg-plum hover:bg-burgundy text-ivory font-semibold text-sm sm:text-base shadow-boutique transition transform hover:-translate-y-0.5" data-i18n="hero_cta_gallery">
+              Explore 16 Blouse Designs
+            </a>
+            <a href="#estimator" class="px-7 py-3.5 rounded-full bg-cream hover:bg-blush/50 text-plumDark border border-gold/50 font-semibold text-sm sm:text-base transition" data-i18n="hero_cta_estimate">
+              Calculate Stitching Cost
+            </a>
+          </div>
+
+          <!-- Quick Trust Metrics -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-gold/25">
+            <div>
+              <p class="font-display text-2xl sm:text-3xl font-bold text-plum">₹250</p>
+              <p class="text-xs text-muted" data-i18n="stat_blouse">Blouses Starting From</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl sm:text-3xl font-bold text-plum">₹30</p>
+              <p class="text-xs text-muted" data-i18n="stat_alteration">Alteration Starting</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl sm:text-3xl font-bold text-plum">₹50</p>
+              <p class="text-xs text-muted" data-i18n="stat_bedding">Bedding Stitching</p>
+            </div>
+            <div>
+              <p class="font-display text-2xl sm:text-3xl font-bold text-plum">Doorstep</p>
+              <p class="text-xs text-muted" data-i18n="stat_home">Home Service in Diva</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Right Showcase -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative rounded-3xl p-4 sm:p-5 glass-panel shadow-boutique">
+            <div class="grid grid-cols-2 gap-3.5">
+              <!-- Updated Poster Image (12i7zyeSx7iLRaF5tVhWfwfBujH9KXrfs) -->
+              <div class="col-span-2 relative rounded-2xl overflow-hidden aspect-[4/3] bg-cream border border-gold/35 group">
+                <img
+                  src="https://lh3.googleusercontent.com/d/12i7zyeSx7iLRaF5tVhWfwfBujH9KXrfs"
+                  alt="Smarnika Ladies Tailoring Updated Studio Poster"
+                  class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                  onerror="handleDriveImgError(this, '12i7zyeSx7iLRaF5tVhWfwfBujH9KXrfs', 'Studio Poster');"
+                />
+                <span class="absolute bottom-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-plumDark/85 text-ivory text-[11px] font-semibold">Studio Rate Poster</span>
+              </div>
+
+              <div class="relative rounded-2xl overflow-hidden aspect-square bg-cream border border-gold/30 group">
+                <img
+                  src="https://lh3.googleusercontent.com/d/1MWJQyvFJWQOjq4mSUTb70es0cmSLIQ8Y"
+                  alt="Smarnika Ladies Tailoring Business Card"
+                  class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                  onerror="handleDriveImgError(this, '1MWJQyvFJWQOjq4mSUTb70es0cmSLIQ8Y', 'Business Card');"
+                />
+                <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-ivory/90 text-plumDark text-[11px] font-semibold">Visiting Card</span>
+              </div>
+              <div class="relative rounded-2xl overflow-hidden aspect-square bg-cream border border-gold/30 group">
+                <img
+                  src="https://lh3.googleusercontent.com/d/1Jz6XCl4j0GompJKVUzbWbFlJNW9WQM68"
+                  alt="Contrast Patchwork Back with Flower Motif"
+                  class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+                  onerror="handleDriveImgError(this, '1Jz6XCl4j0GompJKVUzbWbFlJNW9WQM68', 'Design #08');"
+                />
+                <span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-ivory/90 text-plumDark text-[11px] font-semibold">#08 • ₹350</span>
+              </div>
+            </div>
+
+            <!-- Floating Emblem -->
+            <div class="hidden sm:flex items-center gap-3 mt-4 p-3 rounded-2xl bg-plumDark text-ivory">
+              <img
+                src="https://lh3.googleusercontent.com/d/1_NYtGTTTDJfIfh3Qmjww3utKNWdzvQh8"
+                alt="Smarnika Emblem"
+                class="w-11 h-11 rounded-full object-cover border border-gold"
+                onerror="handleDriveImgError(this, '1_NYtGTTTDJfIfh3Qmjww3utKNWdzvQh8', 'Emblem');"
+              />
+              <div class="text-xs leading-snug">
+                <p class="font-semibold text-goldLight">Smarnika Dinesh Chavan</p>
+                <p class="text-ivory/80">Tanvi Apt, A Wing, Room 107, B.R. Nagar, Diva (East)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story & Updated Studio Poster -->
+  <section id="story" class="py-16 lg:py-24 bg-cream/65 border-y border-gold/20 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-6 space-y-5">
+          <span class="text-xs font-bold tracking-[0.2em] uppercase text-burgundy" data-i18n="story_tag">OUR STUDIO &amp; CRAFT</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-plumDark leading-tight" data-i18n="story_title">
+            Personal Attention in Every Seam, Stitch &amp; Finishing Touch.
+          </h2>
+          <p class="text-muted leading-relaxed" data-i18n="story_p1">
+            Founded by <strong class="text-charcoal">Smarnika Dinesh Chavan</strong> in the heart of B.R. Nagar, Diva (East), <strong class="text-plum">Smarnika Ladies Tailoring</strong> specializes exclusively in boutique-grade blouse stitching, saree finishing, bedding, and alterations.
+          </p>
+          <p class="text-muted leading-relaxed" data-i18n="story_p2">
+            Whether you need a crisp daily-wear katori blouse, a bridal designer back neck with hand-crafted dori tassels, saree fall &amp; pico, bedding stitching, or quick alterations, every garment is measured and finished for comfort and grace.
+          </p>
+
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <div class="p-4 rounded-2xl bg-ivory border border-gold/30">
+              <p class="font-semibold text-plumDark mb-1" data-i18n="story_card1_t">🏠 Doorstep Home Service</p>
+              <p class="text-xs text-muted leading-relaxed" data-i18n="story_card1_d">Can't visit our studio? Call or WhatsApp us for home measurement pickup &amp; delivery across Diva (East).</p>
+            </div>
+            <div class="p-4 rounded-2xl bg-ivory border border-gold/30">
+              <p class="font-semibold text-plumDark mb-1" data-i18n="story_card2_t">✂️ Custom Fit Guarantee</p>
+              <p class="text-xs text-muted leading-relaxed" data-i18n="story_card2_d">Careful allowance margins, neat piping, secure hooks, and complimentary minor fit adjustments.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Updated Studio Poster & Visiting Card -->
+        <div class="lg:col-span-6 grid sm:grid-cols-2 gap-5">
+          <div class="rounded-2xl overflow-hidden bg-ivory border border-gold/35 shadow-card flex flex-col">
+            <div class="aspect-[3/4] bg-cream overflow-hidden">
+              <img
+                src="https://lh3.googleusercontent.com/d/12i7zyeSx7iLRaF5tVhWfwfBujH9KXrfs"
+                alt="Smarnika Ladies Tailoring Official Poster"
+                class="w-full h-full object-cover"
+                onerror="handleDriveImgError(this, '12i7zyeSx7iLRaF5tVhWfwfBujH9KXrfs', 'Studio Poster');"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-display text-lg font-bold text-plumDark">Official Studio Poster</p>
+              <p class="text-xs text-muted">Blouses, Saree Fall &amp; Pico (₹50), Bedding (₹50), Alteration (₹30)</p>
+            </div>
+          </div>
+
+          <div class="rounded-2xl overflow-hidden bg-ivory border border-gold/35 shadow-card flex flex-col">
+            <div class="aspect-[3/4] bg-cream overflow-hidden">
+              <img
+                src="https://lh3.googleusercontent.com/d/1MWJQyvFJWQOjq4mSUTb70es0cmSLIQ8Y"
+                alt="Smarnika Ladies Tailoring Business Cards"
+                class="w-full h-full object-cover"
+                onerror="handleDriveImgError(this, '1MWJQyvFJWQOjq4mSUTb70es0cmSLIQ8Y', 'Business Cards');"
+              />
+            </div>
+            <div class="p-4">
+              <p class="font-display text-lg font-bold text-plumDark">Studio Visiting Card</p>
+              <p class="text-xs text-muted">Save our contact &amp; B.R. Nagar, Diva (East) address</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Rate Card -->
+  <section id="services" class="py-16 lg:py-24 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12 space-y-3">
+        <span class="text-xs font-bold tracking-[0.2em] uppercase text-burgundy" data-i18n="srv_tag">TRANSPARENT PRICING</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold text-plumDark" data-i18n="srv_title">Tailoring Services &amp; Rate Card</h2>
+        <p class="text-muted text-sm sm:text-base" data-i18n="srv_subtitle">
+          Honest, upfront pricing with fine finishing. Select any service to calculate your estimate or inquire directly on WhatsApp.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service 1 -->
+        <div class="p-6 rounded-3xl bg-ivory border border-gold/35 shadow-card hover:shadow-boutique transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-11 h-11 rounded-2xl bg-plum/10 text-plum flex items-center justify-center text-xl">👚</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-plum font-bold text-sm">₹250</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-plumDark mb-2" data-i18n="s1_title">Simple / Katori Blouse</h3>
+            <p class="text-sm text-muted leading-relaxed mb-4" data-i18n="s1_desc">
+              Comfortable daily-wear plain, katori, or cross-cut blouse stitched with neat piping, strong seams, and exact measurements.
+            </p>
+          </div>
+          <a href="#booking" onclick="preselectService('Simple / Katori Blouse (₹250)')" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-cream hover:bg-plum hover:text-ivory text-plumDark text-xs font-semibold transition">
+            <span data-i18n="book_service">Book This Service</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="p-6 rounded-3xl bg-plumDark text-ivory border border-gold shadow-boutique flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full bg-gold text-plumDark text-[10px] font-bold uppercase tracking-wider">Most Popular</div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-11 h-11 rounded-2xl bg-gold/20 text-goldLight flex items-center justify-center text-xl">✨</span>
+              <span class="px-3 py-1 rounded-full bg-gold/20 text-goldLight font-bold text-sm">₹350+</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-ivory mb-2" data-i18n="s2_title">Designer / Aster Blouse</h3>
+            <p class="text-sm text-ivory/80 leading-relaxed mb-4" data-i18n="s2_desc">
+              Lined (aster) blouses, Princess-cut, Boat neck, Bridal back patterns, potli buttons, lace borders, dori &amp; custom latkans.
+            </p>
+          </div>
+          <a href="#booking" onclick="preselectService('Designer / Aster Blouse (₹350+)')" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-gold hover:bg-goldLight text-plumDark text-xs font-bold transition">
+            <span data-i18n="book_service">Book This Service</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="p-6 rounded-3xl bg-ivory border border-gold/35 shadow-card hover:shadow-boutique transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-11 h-11 rounded-2xl bg-plum/10 text-plum flex items-center justify-center text-xl">🥻</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-plum font-bold text-sm">₹50</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-plumDark mb-2" data-i18n="s3_title">Saree Fall &amp; Pico</h3>
+            <p class="text-sm text-muted leading-relaxed mb-4" data-i18n="s3_desc">
+              Clean, invisible hand-stitched or machine saree fall and smooth edge pico finishing that keeps your saree draping gracefully.
+            </p>
+          </div>
+          <a href="#booking" onclick="preselectService('Saree Fall & Pico (₹50)')" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-cream hover:bg-plum hover:text-ivory text-plumDark text-xs font-semibold transition">
+            <span data-i18n="book_service">Book This Service</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Service 4: Bedding ₹50 -->
+        <div class="p-6 rounded-3xl bg-ivory border border-gold/35 shadow-card hover:shadow-boutique transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-11 h-11 rounded-2xl bg-plum/10 text-plum flex items-center justify-center text-xl">🛏️</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-plum font-bold text-sm">₹50</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-plumDark mb-2" data-i18n="s4_title">Bedding Stitching</h3>
+            <p class="text-sm text-muted leading-relaxed mb-4" data-i18n="s4_desc">
+              Neat, durable stitching and hemming for bedsheets, pillow covers, mattress covers, and household linen at an affordable ₹50 rate.
+            </p>
+          </div>
+          <a href="#booking" onclick="preselectService('Bedding Stitching (₹50)')" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-cream hover:bg-plum hover:text-ivory text-plumDark text-xs font-semibold transition">
+            <span data-i18n="book_service">Book This Service</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Service 5: Alteration ₹30 -->
+        <div class="p-6 rounded-3xl bg-ivory border border-gold/35 shadow-card hover:shadow-boutique transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-11 h-11 rounded-2xl bg-plum/10 text-plum flex items-center justify-center text-xl">🪡</span>
+              <span class="px-3 py-1 rounded-full bg-cream text-plum font-bold text-sm">₹30</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-plumDark mb-2" data-i18n="s5_title">Quick Alterations</h3>
+            <p class="text-sm text-muted leading-relaxed mb-4" data-i18n="s5_desc">
+              Fast fitting adjustments, blouse side-fitting, sleeve shortening, hook/eye repair, and length hemming starting at just ₹30.
+            </p>
+          </div>
+          <a href="#booking" onclick="preselectService('Quick Alterations (₹30)')" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-cream hover:bg-plum hover:text-ivory text-plumDark text-xs font-semibold transition">
+            <span data-i18n="book_service">Book This Service</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <!-- Service 6: Home Service -->
+        <div class="p-6 rounded-3xl bg-cream/90 border border-gold/45 shadow-card hover:shadow-boutique transition flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="w-11 h-11 rounded-2xl bg-plum text-ivory flex items-center justify-center text-xl">🏠</span>
+              <span class="px-3 py-1 rounded-full bg-plum/10 text-plum font-bold text-xs">Diva (East)</span>
+            </div>
+            <h3 class="font-display text-2xl font-bold text-plumDark mb-2" data-i18n="s6_title">Doorstep Home Service</h3>
+            <p class="text-sm text-muted leading-relaxed mb-4" data-i18n="s6_desc">
+              Doorstep blouse sample pickup, measurements, and finished garment delivery right to your home in B.R. Nagar &amp; Diva (East).
+            </p>
+          </div>
+          <a href="https://wa.me/919321784626?text=Hello%20Smarnika%20Ladies%20Tailoring%2C%20I%20would%20like%20to%20request%20Home%20Service%20in%20Diva%20(East)." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-between w-full px-4 py-2.5 rounded-xl bg-plum hover:bg-burgundy text-ivory text-xs font-semibold transition">
+            <span data-i18n="request_home">Request Home Visit</span>
+            <span>💬</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Compact Rate Summary Strip -->
+      <div class="mt-8 p-4 sm:p-5 rounded-2xl bg-cream border border-gold/35 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 text-xs sm:text-sm font-medium text-plumDark">
+        <span>👚 Simple Blouse: <strong>₹250</strong></span>
+        <span>✨ Designer / Aster Blouse: <strong>₹350+</strong></span>
+        <span>🥻 Saree Fall &amp; Pico: <strong>₹50</strong></span>
+        <span>🛏️ Bedding: <strong>₹50</strong></span>
+        <span>🪡 Alteration: <strong>₹30</strong></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16-Item Stitched Blouse Gallery -->
+  <section id="gallery" class="py-16 lg:py-24 bg-cream/65 border-y border-gold/20 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div class="space-y-2">
+          <span class="text-xs font-bold tracking-[0.2em] uppercase text-burgundy" data-i18n="gal_tag">REAL STUDIO WORK • 16 DESIGNS</span>
+          <h2 class="font-display text-3xl sm:text-5xl font-bold text-plumDark" data-i18n="gal_title">Stitched Blouse Design Lookbook</h2>
+          <p class="text-sm sm:text-base text-muted max-w-2xl" data-i18n="gal_subtitle">
+            Browse 16 actual blouses stitched at Smarnika Ladies Tailoring. Tap any design to inspect details or request the exact pattern on WhatsApp.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="flex flex-wrap gap-2" id="gallery-filters">
+          <button type="button" data-filter="all" class="filter-btn active px-4 py-2 rounded-full border border-gold/40 text-xs font-semibold transition">All (16)</button>
+          <button type="button" data-filter="keyhole" class="filter-btn px-4 py-2 rounded-full border border-gold/40 bg-ivory text-charcoal text-xs font-semibold transition">Keyhole &amp; Cutout</button>
+          <button type="button" data-filter="bridal" class="filter-btn px-4 py-2 rounded-full border border-gold/40 bg-ivory text-charcoal text-xs font-semibold transition">Bridal &amp; Brocade</button>
+          <button type="button" data-filter="scalloped" class="filter-btn px-4 py-2 rounded-full border border-gold/40 bg-ivory text-charcoal text-xs font-semibold transition">Sweetheart &amp; Lace</button>
+          <button type="button" data-filter="statement" class="filter-btn px-4 py-2 rounded-full border border-gold/40 bg-ivory text-charcoal text-xs font-semibold transition">Bow, Potli &amp; Pearl</button>
+        </div>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div id="gallery-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Interactive Cost Estimator -->
+  <section id="estimator" class="py-16 lg:py-24 reveal">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl p-6 sm:p-10 glass-panel shadow-boutique">
+        <div class="grid lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-5">
+            <span class="text-xs font-bold tracking-[0.2em] uppercase text-burgundy" data-i18n="est_tag">INSTANT QUOTE</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-plumDark" data-i18n="est_title">Stitching Cost Estimator</h2>
+            <p class="text-sm text-muted" data-i18n="est_subtitle">
+              Select your garments and add-ons below to check your approximate stitching total and send it straight to us on WhatsApp.
+            </p>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="est-service" class="block text-xs font-semibold text-charcoal mb-1.5" data-i18n="est_select_label">Select Service</label>
+                <select id="est-service" onchange="updateEstimate()" class="w-full px-3.5 py-2.5 rounded-xl bg-ivory border border-gold/45 text-sm text-charcoal focus:outline-none focus:border-plum">
+                  <option value="250" data-name="Simple / Katori Blouse">Simple / Katori Blouse — ₹250</option>
+                  <option value="350" data-name="Designer / Aster Blouse" selected>Designer / Aster Blouse — ₹350</option>
+                  <option value="50" data-name="Saree Fall & Pico">Saree Fall &amp; Pico — ₹50</option>
+                  <option value="50" data-name="Bedding Stitching">Bedding Stitching — ₹50</option>
+                  <option value="30" data-name="Alteration">Alteration — ₹30</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="est-qty" class="block text-xs font-semibold text-charcoal mb-1.5" data-i18n="est_qty_label">Quantity</label>
+                <input id="est-qty" type="number" min="1" max="20" value="1" oninput="updateEstimate()" class="w-full px-3.5 py-2.5 rounded-xl bg-ivory border border-gold/45 text-sm text-charcoal focus:outline-none focus:border-plum" />
+              </div>
+            </div>
+
+            <div class="space-y-2 pt-1">
+              <p class="text-xs font-semibold text-charcoal" data-i18n="est_addons_label">Optional Customizations (per piece)</p>
+              <div class="grid sm:grid-cols-2 gap-2.5 text-xs">
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-ivory border border-gold/30 cursor-pointer">
+                  <input type="checkbox" class="est-addon accent-plum" value="50" data-label="Custom Latkans / Dori" onchange="updateEstimate()" />
+                  <span>Custom Latkans / Dori (+₹50)</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-ivory border border-gold/30 cursor-pointer">
+                  <input type="checkbox" class="est-addon accent-plum" value="70" data-label="Padded / Princess Cut" onchange="updateEstimate()" />
+                  <span>Padded / Princess Cut (+₹70)</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-ivory border border-gold/30 cursor-pointer">
+                  <input type="checkbox" class="est-addon accent-plum" value="60" data-label="Heavy Lace / Pearl Border" onchange="updateEstimate()" />
+                  <span>Heavy Lace / Pearl Border (+₹60)</span>
+                </label>
+                <label class="flex items-center gap-2.5 p-3 rounded-xl bg-ivory border border-gold/30 cursor-pointer">
+                  <input type="checkbox" id="est-home" class="accent-plum" value="0" onchange="updateEstimate()" />
+                  <span>🏠 Request Home Pickup (Diva East)</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 p-6 rounded-2xl bg-plumDark text-ivory space-y-4">
+            <p class="text-xs uppercase tracking-widest text-goldLight font-semibold" data-i18n="est_summary">Estimated Total</p>
+            <div class="flex items-baseline gap-2">
+              <span id="est-total" class="font-display text-5xl font-bold text-ivory">₹350</span>
+              <span class="text-xs text-ivory/70" data-i18n="est_note">approx. final quote on fabric check</span>
+            </div>
+            <p id="est-breakdown" class="text-xs text-ivory/80 leading-relaxed border-t border-gold/25 pt-3">
+              1 × Designer / Aster Blouse (₹350)
+            </p>
+            <a
+              id="est-wa-link"
+              href="https://wa.me/919321784626"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 w-full py-3.5 px-5 rounded-full bg-gold hover:bg-goldLight text-plumDark font-bold text-sm transition"
+            >
+              <span>💬</span>
+              <span data-i18n="est_send_wa">Send Estimate on WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="process" class="py-16 lg:py-24 bg-cream/65 border-y border-gold/20 reveal">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-bold tracking-[0.2em] uppercase text-burgundy" data-i18n="proc_tag">SIMPLE 3-STEP PROCESS</span>
+        <h2 class="font-display text-3xl sm:text-5xl font-bold text-plumDark" data-i18n="proc_title">From Fabric to Flawless Fit</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-3xl bg-ivory border border-gold/35 shadow-card space-y-3">
+          <span class="inline-flex w-10 h-10 rounded-full bg-plum text-ivory font-display font-bold text-lg items-center justify-center">1</span>
+          <h3 class="font-display text-2xl font-bold text-plumDark" data-i18n="p1_t">Choose Design &amp; Book</h3>
+          <p class="text-sm text-muted leading-relaxed" data-i18n="p1_d">
+            Pick a blouse pattern from our 16-design lookbook or share your own inspiration on WhatsApp, then visit our studio or book a home visit.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-ivory border border-gold/35 shadow-card space-y-3">
+          <span class="inline-flex w-10 h-10 rounded-full bg-plum text-ivory font-display font-bold text-lg items-center justify-center">2</span>
+          <h3 class="font-display text-2xl font-bold text-plumDark" data-i18n="p2_t">Precision Measurement</h3>
+          <p class="text-sm text-muted leading-relaxed" data-i18n="p2_d">
+            Bring a well-fitting sample blouse or let Smarnika take exact body measurements—at B.R. Nagar studio or your doorstep in Diva (East).
+          </p>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-ivory border border-gold/35 shadow-card space-y-3">
+          <span class="inline-flex w-10 h-10 rounded-full bg-plum text-ivory font-display font-bold text-lg items-center justify-center">3</span>
+          <h3 class="font-display text-2xl font-bold text-plumDark" data-i18n="p3_t">On-Time Delivery &amp; Fit Check</h3>
+          <p class="text-sm text-muted leading-relaxed" data-i18n="p3_d">
+            Receive your freshly pressed, neatly finished garment on schedule—with free minor fit tweaks if ever needed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment & Location Section -->
+  <section id="contact" class="py-16 lg:py-24 reveal">
+    <div id="booking" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+        <!-- WhatsApp Booking Form -->
+        <div class="lg:col-span-6 p-6 sm:p-9 rounded-3xl bg-ivory border border-gold/40 shadow-boutique space-y-5">
+          <div class="space-y-1.5">
+            <span class="text-xs font-bold tracking-[0.2em] uppercase text-burgundy" data-i18n="book_tag">BOOK APPOINTMENT</span>
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-plumDark" data-i18n="book_title">Book Studio Visit or Home Pickup</h2>
+            <p class="text-sm text-muted" data-i18n="book_sub">Fill in your details and send your order directly to Smarnika Ladies Tailoring via WhatsApp.</p>
+          </div>
+
+          <form onsubmit="submitWhatsAppBooking(event)" class="space-y-4">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-charcoal mb-1" data-i18n="f_name">Your Name</label>
+                <input id="bk-name" type="text" required placeholder="e.g., Priya Patil" class="w-full px-3.5 py-2.5 rounded-xl bg-cream/60 border border-gold/40 text-sm focus:outline-none focus:border-plum" />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-charcoal mb-1" data-i18n="f_phone">Mobile / WhatsApp Number</label>
+                <input id="bk-phone" type="tel" required placeholder="e.g., 98XXXXXXXX" class="w-full px-3.5 py-2.5 rounded-xl bg-cream/60 border border-gold/40 text-sm focus:outline-none focus:border-plum" />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-charcoal mb-1" data-i18n="f_service">Service Needed</label>
+                <select id="bk-service" class="w-full px-3.5 py-2.5 rounded-xl bg-cream/60 border border-gold/40 text-sm focus:outline-none focus:border-plum">
+                  <option value="Designer / Aster Blouse (₹350+)">Designer / Aster Blouse (₹350+)</option>
+                  <option value="Simple / Katori Blouse (₹250)">Simple / Katori Blouse (₹250)</option>
+                  <option value="Saree Fall & Pico (₹50)">Saree Fall &amp; Pico (₹50)</option>
+                  <option value="Bedding Stitching (₹50)">Bedding Stitching (₹50)</option>
+                  <option value="Quick Alterations (₹30)">Quick Alterations (₹30)</option>
+                </select>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-charcoal mb-1" data-i18n="f_mode">Visit Preference</label>
+                <select id="bk-mode" class="w-full px-3.5 py-2.5 rounded-xl bg-cream/60 border border-gold/40 text-sm focus:outline-none focus:border-plum">
+                  <option value="Visit B.R. Nagar Studio">Visit B.R. Nagar Studio</option>
+                  <option value="Home Service Pickup (Diva East)">Home Service Pickup (Diva East)</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-semibold text-charcoal mb-1" data-i18n="f_notes">Design Number or Special Notes (Optional)</label>
+              <textarea id="bk-notes" rows="3" placeholder="e.g., Design #16 Rani Pink Pearl Cutout, urgent delivery by Friday..." class="w-full px-3.5 py-2.5 rounded-xl bg-cream/60 border border-gold/40 text-sm focus:outline-none focus:border-plum"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-plum hover:bg-burgundy text-ivory font-semibold text-sm sm:text-base shadow-card transition flex items-center justify-center gap-2">
+              <span>💬</span>
+              <span data-i18n="f_submit">Send Booking on WhatsApp</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Studio Location Card -->
+        <div class="lg:col-span-6 rounded-3xl overflow-hidden bg-plumDark text-ivory border border-gold/40 shadow-boutique flex flex-col justify-between">
+          <div class="p-6 sm:p-9 space-y-5">
+            <span class="text-xs font-bold tracking-[0.2em] uppercase text-goldLight" data-i18n="loc_tag">VISIT OUR STUDIO</span>
+            <h3 class="font-display text-3xl sm:text-4xl font-bold text-ivory">Smarnika Ladies Tailoring</h3>
+            <p class="text-sm text-ivory/80">Proprietor: <strong class="text-goldLight">Smarnika Dinesh Chavan</strong></p>
+
+            <div class="space-y-3 text-sm text-ivory/90 pt-2">
+              <div class="flex items-start gap-3">
+                <span class="text-goldLight text-lg">📍</span>
+                <div>
+                  <p class="font-semibold text-ivory">Studio Address</p>
+                  <p class="text-ivory/80">Tanvi Apt, A Wing, Room No. 107, B.R. Nagar, Diva (East) — 400612</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="text-goldLight text-lg">🕒</span>
+                <div>
+                  <p class="font-semibold text-ivory">Working Hours</p>
+                  <p class="text-ivory/80">Monday – Sunday: 10:00 AM to 9:00 PM</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3">
+                <span class="text-goldLight text-lg">📞</span>
+                <div>
+                  <p class="font-semibold text-ivory">Call or WhatsApp</p>
+                  <p class="text-ivory/80">
+                    <a href="tel:+919321784626" class="hover:text-goldLight underline">93217 84626</a> /
+                    <a href="tel:+917410591695" class="hover:text-goldLight underline">74105 91695</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Embedded Google Map & Directions CTA -->
+          <div class="w-full h-56 sm:h-64 bg-cream border-t border-gold/25">
+            <iframe
+              title="Smarnika Ladies Tailoring Location - B.R. Nagar, Diva (East)"
+              src="https://maps.google.com/maps?q=B.R.%20Nagar%2C%20Diva%20East%2C%20Thane%20400612&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              class="w-full h-full border-0"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <div class="p-5 sm:px-8 sm:py-5 bg-burgundy/60 border-t border-gold/25 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+            <div>
+              <p class="text-xs uppercase tracking-wider text-goldLight font-semibold">B.R. Nagar, Diva (East)</p>
+              <p class="text-xs text-ivory/80 mt-0.5">Near Diva Railway Station • Easy Auto &amp; Walking Access</p>
+            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=B.R.+Nagar+Diva+East+Thane"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gold hover:bg-goldLight text-plumDark text-xs font-bold transition"
+            >
+              <span>🗺️</span>
+              <span>Get Directions</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-plumDark text-ivory/85 border-t border-gold/30 py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <img
+          src="https://lh3.googleusercontent.com/d/1bmzut0EO2YhdJL6rrAnOsQlu9nMWrgZz"
+          alt="Smarnika Logo"
+          class="h-11 w-auto object-contain bg-ivory/95 px-2.5 py-1 rounded-xl"
+          onerror="handleDriveImgError(this, '1bmzut0EO2YhdJL6rrAnOsQlu9nMWrgZz', 'Logo');"
+        />
+        <div>
+          <p class="font-display text-lg font-bold text-ivory">Smarnika Ladies Tailoring</p>
+          <p class="text-xs text-goldLight italic">Stitching with Style... सौंदर्य तुमच्या शैलीत...</p>
+        </div>
+      </div>
+
+      <p class="text-xs text-ivory/70 text-center sm:text-right">
+        © <span id="year"></span> Smarnika Ladies Tailoring • Tanvi Apt, B.R. Nagar, Diva (East). All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky Bottom Action Bar -->
+  <div class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-plumDark/95 backdrop-blur-md border-t border-gold/35 px-4 py-2.5 flex items-center gap-3">
+    <a href="tel:+919321784626" class="flex-1 py-2.5 rounded-full bg-ivory text-plumDark font-bold text-xs text-center">
+      📞 Call Studio
+    </a>
+    <a
+      href="https://wa.me/919321784626?text=Hello%20Smarnika%20Ladies%20Tailoring%2C%20I%20want%20to%20enquire%20about%20blouse%20stitching."
+      target="_blank"
+      rel="noopener noreferrer"
+      class="flex-1 py-2.5 rounded-full bg-gold text-plumDark font-bold text-xs text-center"
+    >
+      💬 WhatsApp Now
+    </a>
+  </div>
+
+  <!-- Lightbox Modal for Blouse Designs -->
+  <div id="lightbox" class="fixed inset-0 z-50 hidden bg-plumDark/85 backdrop-blur-sm p-4 flex items-center justify-center" onclick="closeLightbox(event)">
+    <div class="bg-ivory rounded-3xl max-w-2xl w-full overflow-hidden border border-gold/50 shadow-boutique" onclick="event.stopPropagation()">
+      <div class="relative bg-cream aspect-[4/3] max-h-[62vh] overflow-hidden">
+        <img id="lb-img" src="" alt="" class="w-full h-full object-contain" />
+        <button type="button" onclick="closeLightbox()" class="absolute top-3 right-3 w-9 h-9 rounded-full bg-plumDark/85 text-ivory flex items-center justify-center text-sm font-bold hover:bg-plum">✕</button>
+        <span id="lb-badge" class="absolute top-3 left-3 px-3 py-1 rounded-full bg-plum text-ivory text-xs font-bold"></span>
+      </div>
+      <div class="p-6 space-y-3">
+        <div class="flex items-start justify-between gap-4">
+          <h3 id="lb-title" class="font-display text-2xl sm:text-3xl font-bold text-plumDark"></h3>
+          <span id="lb-price" class="px-3 py-1 rounded-full bg-cream text-plum font-bold text-sm shrink-0"></span>
+        </div>
+        <p id="lb-desc" class="text-sm text-muted leading-relaxed"></p>
+        <div class="pt-2 flex flex-wrap gap-3">
+          <a id="lb-wa" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 px-5 rounded-full bg-plum hover:bg-burgundy text-ivory font-semibold text-sm text-center transition">
+            💬 Order This Blouse Design on WhatsApp
+          </a>
+          <button type="button" onclick="closeLightbox()" class="py-3 px-5 rounded-full bg-cream text-plumDark font-semibold text-sm">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const blouseDesigns = [
+      {
+        id: "01",
+        fileId: "100_3Or-VtuRyIqZUON8nZRyjgQD4R2Nh",
+        category: "keyhole",
+        price: "₹350",
+        title_en: "Ruffled Cutwork / Keyhole Back with Flower & Latkans",
+        title_mr: "रफल कटवर्क / कीहोल बॅक विथ फ्लॉवर व लटकन",
+        desc_en: "Teal / slate-blue silk blouse with pleated ruffle trim, lace border, central red flower motif, and dori tie-ups.",
+        desc_mr: "टीळ / स्लेट-निळ्या सिल्क ब्लाउजवर प्लीटेड रफल ट्रिम, लेस बॉर्डर, मध्यभागी लाल फूल आणि दोरी लटकन."
+      },
+      {
+        id: "02",
+        fileId: "127Y7H2GoGQndjijU_3iGz_hvvefBsgbH",
+        category: "keyhole",
+        price: "₹350",
+        title_en: "Lace-Trimmed Keyhole Cutout Back with Dori",
+        title_mr: "लेस-ट्रिम कीहोल कटआउट बॅक विथ दोरी",
+        desc_en: "Teal / green shimmer blouse featuring beaded lace border, delicate motifs, and matching back ties.",
+        desc_mr: "टीळ / हिरव्या शिमर ब्लाउजवर मण्यांची लेस बॉर्डर, नाजूक बुट्टी आणि मॅचिंग दोरी."
+      },
+      {
+        id: "03",
+        fileId: "13ZYQCCJ2dAuc3ha6zPycHb39MR2dCaLW",
+        category: "bridal",
+        price: "₹350",
+        title_en: "Arch Window Cutout Back with Zari Border",
+        title_mr: "आर्च विंडो कटआउट बॅक विथ जरी बॉर्डर",
+        desc_en: "Magenta / purple silk blouse with arched back window cutout, gold piping trim, and broad brocade sleeve border.",
+        desc_mr: "जांभळ्या / मॅजेन्टा सिल्क ब्लाउजवर कमानदार बॅक कटआउट, गोल्ड पायपिंग आणि रुंद ब्रोकेड बॉर्डर."
+      },
+      {
+        id: "04",
+        fileId: "16I9ODkvP5WTt2M5gV6cfQXOOV7NLWeJ6",
+        category: "keyhole",
+        price: "₹350",
+        title_en: "Oval / Leaf Cutout Back with Top Dori & Tassels",
+        title_mr: "ओव्हल / लीफ कटआउट बॅक विथ दोरी व टॅसल्स",
+        desc_en: "Rust / terracotta silk blouse with curved leaf-shaped cutout, gold trim, top tie-up, and handcrafted tassels.",
+        desc_mr: "रस्ट / टेराकोटा ब्लाउजवर पानाच्या आकाराचा कटआउट, गोल्ड ट्रिम आणि सुंदर टॅसल्स."
+      },
+      {
+        id: "05",
+        fileId: "1EEMIMeN2T4ueCvy0yE-T7g2XipDH1O5w",
+        category: "scalloped",
+        price: "₹350",
+        title_en: "Sweetheart / Scalloped Cutout Back with Dori",
+        title_mr: "स्वीटहार्ट / स्कॅलॉप्ड कटआउट बॅक विथ दोरी",
+        desc_en: "Deep purple / plum brocade blouse with wavy sweetheart back opening, gold edging, brocade sleeves, and ties.",
+        desc_mr: "गडद जांभळ्या ब्रोकेड ब्लाउजवर लहरी स्वीटहार्ट बॅक ओपनिंग, गोल्ड एजिंग आणि ब्रोकेड बाह्या."
+      },
+      {
+        id: "06",
+        fileId: "1Gitqw5RU0LgDrwmnCf_2oA-4xEi_njbI",
+        category: "scalloped",
+        price: "₹350",
+        title_en: "Scalloped Yoke / Sweetheart Panel Back",
+        title_mr: "स्कॅलॉप्ड योक / स्वीटहार्ट पॅनेल बॅक",
+        desc_en: "Rose pink lace / net blouse with curved back yoke line and subtle, graceful finishing trim.",
+        desc_mr: "गुलाबी लेस / नेट ब्लाउजवर वक्र बॅक योक डिझाइन आणि नाजूक फिनिशिंग."
+      },
+      {
+        id: "07",
+        fileId: "1Hl8elc5RsUpwRAgpwH1EDY2sIC9lswVU",
+        category: "keyhole",
+        price: "₹350",
+        title_en: "Round Cutout Back with Flower Accent & Contrast Border",
+        title_mr: "राउंड कटआउट बॅक विथ फ्लॉवर व कॉन्ट्रास्ट बॉर्डर",
+        desc_en: "Rust / copper blouse with scoop neckline, curved back opening, small flower motif, and contrast border.",
+        desc_mr: "तांबूस / रस्ट ब्लाउजवर गोल कटआउट, फुलाची डिझाइन आणि कॉन्ट्रास्ट बॉर्डर."
+      },
+      {
+        id: "08",
+        fileId: "1Jz6XCl4j0GompJKVUzbWbFlJNW9WQM68",
+        category: "bridal",
+        price: "₹350",
+        title_en: "Contrast Patchwork Back with Flower Motif",
+        title_mr: "कॉन्ट्रास्ट पॅचवर्क बॅक विथ फ्लॉवर मोटिफ",
+        desc_en: "Teal brocade blouse with patterned sleeve borders, hot pink contrast patch, and handcrafted teal flower accent.",
+        desc_mr: "टीळ ब्रोकेड ब्लाउजवर हॉट पिंक कॉन्ट्रास्ट पॅचवर्क आणि मध्यभागी फुलाची सजावट."
+      },
+      {
+        id: "09",
+        fileId: "1UJX9zc9yHThgR97Mr6Q5G0UjCo1I6AR2",
+        category: "keyhole",
+        price: "₹350",
+        title_en: "Deep Scoop Cutout Back with Motif Appliqué & Dori",
+        title_mr: "डीप स्कूप कटआउट बॅक विथ मोटिफ ॲप्लिक",
+        desc_en: "Bottle green blouse with deep curved back opening, gold trim, dori cords, and decorative motifs near the hem.",
+        desc_mr: "बॉटल ग्रीन ब्लाउजवर खोल वक्र बॅक कटआउट, गोल्ड ट्रिम आणि खालच्या बाजूला नक्षीदार बुट्टी."
+      },
+      {
+        id: "10",
+        fileId: "1aAhwu5fXZ70xNf9BEIrLMoSLYUODmfu-",
+        category: "bridal",
+        price: "₹350",
+        title_en: "Front-Open Boat / Round Neck with Brocade Border",
+        title_mr: "फ्रंट-ओपन बोट / राउंड नेक विथ ब्रोकेड बॉर्डर",
+        desc_en: "Teal brocade blouse with all-over woven motifs, gold lace trim, and patterned borders with small tassels.",
+        desc_mr: "टीळ ब्रोकेड ब्लाउजवर संपूर्ण विणकाम बुट्टी, गोल्ड लेस आणि लहान टॅसल्स."
+      },
+      {
+        id: "11",
+        fileId: "1cAKX-fVcSGguSmcm3Bb7IQoOqJ--CEKa",
+        category: "statement",
+        price: "₹380",
+        title_en: "Potli-Button Back Cutout with Ruffle Shoulder Trim",
+        title_mr: "पोटली-बटण बॅक कटआउट विथ रफल शोल्डर",
+        desc_en: "Rust / red brocade blouse with square potli/loop buttons along the open back, square tassels, and pleated shoulder ruffles.",
+        desc_mr: "लाल / रस्ट ब्रोकेड ब्लाउजवर पोटली बटणे, चौकोनी लटकन आणि खांद्यावर प्लीटेड रफल्स."
+      },
+      {
+        id: "12",
+        fileId: "1eDA58NP8kmO-F6iKTNLGs4U1cTIcNzxP",
+        category: "statement",
+        price: "₹380",
+        title_en: "Bow-Tie Open Back with Box Cutout",
+        title_mr: "बो-टाय ओपन बॅक विथ बॉक्स कटआउट",
+        desc_en: "Mauve / plum diamond-check brocade blouse with a structured fabric bow above a rectangular back opening.",
+        desc_mr: "मॉव्ह / प्लम डायमंड-चेक ब्रोकेड ब्लाउजवर चौकोनी कटआउट आणि आकर्षक बो-टाय."
+      },
+      {
+        id: "13",
+        fileId: "1hh8BjOM0ZO5ODQaOhvNpUMNiogdeqjOt",
+        category: "keyhole",
+        price: "₹350",
+        title_en: "Keyhole / Tear-Drop Back with Square Lace Tassels",
+        title_mr: "कीहोल / टिअर-ड्रॉप बॅक विथ लेस टॅसल्स",
+        desc_en: "Navy blue silk blouse with curved tear-drop back cutout, gold trim, square-bordered tassels, and patterned cuffs.",
+        desc_mr: "नेव्ही ब्लू सिल्क ब्लाउजवर टिअर-ड्रॉप बॅक कटआउट, गोल्ड ट्रिम आणि चौकोनी लेस लटकन."
+      },
+      {
+        id: "14",
+        fileId: "1pFcXljahMklTIcI232Jx3k1-fZe82a1o",
+        category: "bridal",
+        price: "₹350",
+        title_en: "Wide Cutout Keyhole Back with Matching Tassels",
+        title_mr: "वाइड कटआउट कीहोल बॅक विथ मॅचिंग टॅसल्स",
+        desc_en: "Deep plum / wine checkered brocade blouse with wide back opening, gathered brocade tassels, and layered sleeve edges.",
+        desc_mr: "वाइन / प्लम चेकर्ड ब्रोकेड ब्लाउजवर रुंद बॅक कटआउट आणि मॅचिंग ब्रोकेड लटकन."
+      },
+      {
+        id: "15",
+        fileId: "1tA11H5XdZOyIPc5Xk35e7cZywp9TyEIw",
+        category: "keyhole",
+        price: "₹350",
+        title_en: "Cutout Back with Dori & Tassel Accent",
+        title_mr: "कटआउट बॅक विथ दोरी व टॅसल ॲक्सेंट",
+        desc_en: "Olive / mustard gold blouse with white leaf print, gold piping trim, curved back opening, and tie-up tassels.",
+        desc_mr: "ऑलिव्ह / मस्टर्ड गोल्ड लीफ-प्रिंट ब्लाउजवर वक्र बॅक ओपनिंग आणि दोरी टॅसल्स."
+      },
+      {
+        id: "16",
+        fileId: "1uJ9XJ_UQyKH7iJ5gIe2CIBMEHhN1JHhQ",
+        category: "statement",
+        price: "₹400",
+        title_en: "Pearl & Loop-Trimmed Cutout Back with Flower",
+        title_mr: "पर्ल व लूप-ट्रिम कटआउट बॅक विथ फ्लॉवर",
+        desc_en: "Hot pink silk blouse with loop trim, pearl beading, teal petal accents, central flower motif, and brocade borders.",
+        desc_mr: "हॉट पिंक सिल्क ब्लाउजवर मोत्यांची सजावट, लूप ट्रिम, मध्यभागी फूल आणि ब्रोकेड बॉर्डर."
+      }
+    ];
+
+    let currentLang = "en";
+    let activeFilter = "all";
+
+    const translations = {
+      en: {
+        top_banner: "Home Service Available in Diva (East) • Blouses from ₹250 • Alteration ₹30 • Bedding ₹50",
+        nav_story: "Our Story",
+        nav_services: "Services & Rates",
+        nav_gallery: "Blouse Gallery (16)",
+        nav_process: "How It Works",
+        nav_contact: "Contact",
+        whatsapp_us: "WhatsApp Us",
+        hero_badge: "HOME SERVICE AVAILABLE",
+        hero_title: "Bespoke Blouse Stitching & Alterations Crafted for Your Perfect Fit.",
+        hero_subtitle: "Trusted by women across B.R. Nagar, Diva (East) for custom designer blouses, saree fall & pico, bedding (₹50), and precision alterations (₹30)—with convenient doorstep measurement pickup & delivery.",
+        hero_cta_gallery: "Explore 16 Blouse Designs",
+        hero_cta_estimate: "Calculate Stitching Cost",
+        stat_blouse: "Blouses Starting From",
+        stat_alteration: "Alteration Starting",
+        stat_bedding: "Bedding Stitching",
+        stat_home: "Home Service in Diva",
+        story_tag: "OUR STUDIO & CRAFT",
+        story_title: "Personal Attention in Every Seam, Stitch & Finishing Touch.",
+        story_p1: "Founded by Smarnika Dinesh Chavan in the heart of B.R. Nagar, Diva (East), Smarnika Ladies Tailoring specializes exclusively in boutique-grade blouse stitching, saree finishing, bedding, and alterations.",
+        story_p2: "Whether you need a crisp daily-wear katori blouse, a bridal designer back neck with hand-crafted dori tassels, saree fall & pico, bedding stitching, or quick alterations, every garment is measured and finished for comfort and grace.",
+        story_card1_t: "🏠 Doorstep Home Service",
+        story_card1_d: "Can't visit our studio? Call or WhatsApp us for home measurement pickup & delivery across Diva (East).",
+        story_card2_t: "✂️ Custom Fit Guarantee",
+        story_card2_d: "Careful allowance margins, neat piping, secure hooks, and complimentary minor fit adjustments.",
+        srv_tag: "TRANSPARENT PRICING",
+        srv_title: "Tailoring Services & Rate Card",
+        srv_subtitle: "Honest, upfront pricing with fine finishing. Select any service to calculate your estimate or inquire directly on WhatsApp.",
+        s1_title: "Simple / Katori Blouse",
+        s1_desc: "Comfortable daily-wear plain, katori, or cross-cut blouse stitched with neat piping, strong seams, and exact measurements.",
+        s2_title: "Designer / Aster Blouse",
+        s2_desc: "Lined (aster) blouses, Princess-cut, Boat neck, Bridal back patterns, potli buttons, lace borders, dori & custom latkans.",
+        s3_title: "Saree Fall & Pico",
+        s3_desc: "Clean, invisible hand-stitched or machine saree fall and smooth edge pico finishing that keeps your saree draping gracefully.",
+        s4_title: "Bedding Stitching",
+        s4_desc: "Neat, durable stitching and hemming for bedsheets, pillow covers, mattress covers, and household linen at an affordable ₹50 rate.",
+        s5_title: "Quick Alterations",
+        s5_desc: "Fast fitting adjustments, blouse side-fitting, sleeve shortening, hook/eye repair, and length hemming starting at just ₹30.",
+        s6_title: "Doorstep Home Service",
+        s6_desc: "Doorstep blouse sample pickup, measurements, and finished garment delivery right to your home in B.R. Nagar & Diva (East).",
+        book_service: "Book This Service",
+        request_home: "Request Home Visit",
+        gal_tag: "REAL STUDIO WORK • 16 DESIGNS",
+        gal_title: "Stitched Blouse Design Lookbook",
+        gal_subtitle: "Browse 16 actual blouses stitched at Smarnika Ladies Tailoring. Tap any design to inspect details or request the exact pattern on WhatsApp.",
+        est_tag: "INSTANT QUOTE",
+        est_title: "Stitching Cost Estimator",
+        est_subtitle: "Select your garments and add-ons below to check your approximate stitching total and send it straight to us on WhatsApp.",
+        est_select_label: "Select Service",
+        est_qty_label: "Quantity",
+        est_addons_label: "Optional Customizations (per piece)",
+        est_summary: "Estimated Total",
+        est_note: "approx. final quote on fabric check",
+        est_send_wa: "Send Estimate on WhatsApp",
+        proc_tag: "SIMPLE 3-STEP PROCESS",
+        proc_title: "From Fabric to Flawless Fit",
+        p1_t: "Choose Design & Book",
+        p1_d: "Pick a blouse pattern from our 16-design lookbook or share your own inspiration on WhatsApp, then visit our studio or book a home visit.",
+        p2_t: "Precision Measurement",
+        p2_d: "Bring a well-fitting sample blouse or let Smarnika take exact body measurements—at B.R. Nagar studio or your doorstep in Diva (East).",
+        p3_t: "On-Time Delivery & Fit Check",
+        p3_d: "Receive your freshly pressed, neatly finished garment on schedule—with free minor fit tweaks if ever needed.",
+        book_tag: "BOOK APPOINTMENT",
+        book_title: "Book Studio Visit or Home Pickup",
+        book_sub: "Fill in your details and send your order directly to Smarnika Ladies Tailoring via WhatsApp.",
+        f_name: "Your Name",
+        f_phone: "Mobile / WhatsApp Number",
+        f_service: "Service Needed",
+        f_mode: "Visit Preference",
+        f_notes: "Design Number or Special Notes (Optional)",
+        f_submit: "Send Booking on WhatsApp",
+        loc_tag: "VISIT OUR STUDIO"
+      },
+      mr: {
+        top_banner: "दिवा (पूर्व) येथे होम सर्व्हिस उपलब्ध • ब्लाउज ₹२५० पासून • अल्टरेशन ₹३० • बेडिंग ₹५०",
+        nav_story: "आमची ओळख",
+        nav_services: "सेवा आणि दर",
+        nav_gallery: "ब्लाउज गॅलरी (१६)",
+        nav_process: "कामाची पद्धत",
+        nav_contact: "संपर्क",
+        whatsapp_us: "व्हॉट्सॲप करा",
+        hero_badge: "होम सर्व्हिस उपलब्ध",
+        hero_title: "तुमच्या परफेक्ट फिटिंगसाठी खास डिझायनर ब्लाउज शिवणकाम.",
+        hero_subtitle: "बी.आर. नगर, दिवा (पूर्व) येथील महिलांचा विश्वासू टेलरिंग स्टुडिओ — डिझायनर ब्लाउज, साडी फॉल-पिको, बेडिंग (₹५०) आणि अल्टरेशन (₹३०) घरपोच माप व डिलिव्हरी सुविधेसह.",
+        hero_cta_gallery: "१६ ब्लाउज डिझाइन्स पहा",
+        hero_cta_estimate: "शिलाई खर्च मोजा",
+        stat_blouse: "ब्लाउज शिलाई सुरुवात",
+        stat_alteration: "अल्टरेशन दर",
+        stat_bedding: "बेडिंग शिलाई",
+        stat_home: "दिवा (पूर्व) होम सर्व्हिस",
+        story_tag: "आमचा स्टुडिओ आणि कला",
+        story_title: "प्रत्येक टाक्यात अचूक फिटिंग आणि सुंदर फिनिशिंग.",
+        story_p1: "स्मार्णिका दिनेश चव्हाण यांनी बी.आर. नगर, दिवा (पूर्व) येथे सुरू केलेले स्मार्णिका लेडीज टेलरिंग हे खास डिझायनर ब्लाउज शिवणकाम, साडी फॉल-पिको, बेडिंग आणि अल्टरेशनसाठी ओळखले जाते.",
+        story_p2: "साधा कटोरी ब्लाउज असो, अस्तर व डिझायनर बॅक नेक ब्लाउज, साडी फॉल-पिको, बेडिंग शिलाई किंवा तातडीचे अल्टरेशन — प्रत्येक कपडा अत्यंत काळजीपूर्वक शिवला जातो.",
+        story_card1_t: "🏠 घरपोच होम सर्व्हिस",
+        story_card1_d: "स्टुडिओत येणे शक्य नसल्यास कॉल किंवा व्हॉट्सॲप करा; दिवा (पूर्व) मध्ये घरपोच माप व डिलिव्हरी उपलब्ध.",
+        story_card2_t: "✂️ परफेक्ट फिटिंगची खात्री",
+        story_card2_d: "योग्य मार्जिन, नीटनेटकी पायपिंग, मजबूत हुक आणि आवश्यक असल्यास मोफत फिटिंग दुरुस्ती.",
+        srv_tag: "पारदर्शक दरपत्रक",
+        srv_title: "टेलरिंग सेवा आणि दर",
+        srv_subtitle: "योग्य दरात उत्कृष्ट फिनिशिंग. तुमची सेवा निवडा किंवा थेट व्हॉट्सॲपवर बुकिंग करा.",
+        s1_title: "साधा / कटोरी ब्लाउज",
+        s1_desc: "रोजच्या वापरासाठी आरामदायी साधा, कटोरी किंवा क्रॉस-कट ब्लाउज नीटनेटकी पायपिंग व अचूक मापासह.",
+        s2_title: "डिझायनर / अस्तर ब्लाउज",
+        s2_desc: "अस्तर ब्लाउज, प्रिन्सेस-कट, बोट नेक, ब्रायडल बॅक डिझाइन, पोटली बटणे, लेस बॉर्डर, दोरी व लटकन.",
+        s3_title: "साडी फॉल आणि पिको",
+        s3_desc: "साडीला सुंदर ड्रेप येण्यासाठी मजबूत व स्वच्छ फॉल आणि पिको फिनिशिंग.",
+        s4_title: "बेडिंग शिलाई",
+        s4_desc: "चादरी, उशीचे कव्हर आणि घरगुती कपड्यांची मजबूत शिलाई फक्त ₹५० मध्ये.",
+        s5_title: "त्वरित अल्टरेशन",
+        s5_desc: "ब्लाउज साइड-फिटिंग, बाह्या लहान करणे, हुक दुरुस्ती आणि इतर अल्टरेशन फक्त ₹३० पासून.",
+        s6_title: "घरपोच होम सर्व्हिस",
+        s6_desc: "बी.आर. नगर आणि दिवा (पूर्व) परिसरात घरून सॅम्पल ब्लाउज नेणे व शिवून परत पोहोचवणे.",
+        book_service: "ही सेवा बुक करा",
+        request_home: "होम व्हिजिट बुक करा",
+        gal_tag: "प्रत्यक्ष शिवलेले १६ डिझाइन्स",
+        gal_title: "स्टिच्ड ब्लाउज डिझाइन लुकबुक",
+        gal_subtitle: "स्मार्णिका लेडीज टेलरिंगमध्ये प्रत्यक्ष शिवलेले १६ ब्लाउज पहा. कोणतेही डिझाइन मोठे करून पाहण्यासाठी त्यावर क्लिक करा.",
+        est_tag: "अंदाजे खर्च",
+        est_title: "शिलाई खर्च कॅल्क्युलेटर",
+        est_subtitle: "तुमची सेवा आणि डिझाइन पर्याय निवडून अंदाजे खर्च पहा आणि थेट व्हॉट्सॲपवर पाठवा.",
+        est_select_label: "सेवा निवडा",
+        est_qty_label: "संख्या (नग)",
+        est_addons_label: "अतिरिक्त डिझाइन पर्याय (प्रति ब्लाउज)",
+        est_summary: "अंदाजे एकूण रक्कम",
+        est_note: "कापड तपासल्यानंतर अंतिम दर",
+        est_send_wa: "व्हॉट्सॲपवर अंदाज पाठवा",
+        proc_tag: "सोपी ३-टप्प्यांची पद्धत",
+        proc_title: "कापडापासून परफेक्ट फिटिंगपर्यंत",
+        p1_t: "डिझाइन निवडा आणि बुक करा",
+        p1_d: "आमच्या १६ डिझाइन्समधून आवडता पॅटर्न निवडा आणि व्हॉट्सॲपवर मेसेज पाठवा.",
+        p2_t: "अचूक माप",
+        p2_d: "सॅम्पल ब्लाउज द्या किंवा बी.आर. नगर स्टुडिओत अथवा घरपोच अचूक माप द्या.",
+        p3_t: "वेळेवर डिलिव्हरी",
+        p3_d: "ठरलेल्या वेळेत इस्त्री केलेला, नीटनेटका ब्लाउज मिळवा.",
+        book_tag: "अपॉइंटमेंट बुक करा",
+        book_title: "स्टुडिओ व्हिजिट किंवा होम पिकअप बुक करा",
+        book_sub: "खालील माहिती भरून थेट स्मार्णिका लेडीज टेलरिंगला व्हॉट्सॲपवर पाठवा.",
+        f_name: "तुमचे नाव",
+        f_phone: "मोबाईल / व्हॉट्सॲप नंबर",
+        f_service: "कोणती सेवा हवी आहे?",
+        f_mode: "पद्धत निवडा",
+        f_notes: "डिझाइन नंबर किंवा विशेष सूचना (ऐच्छिक)",
+        f_submit: "व्हॉट्सॲपवर बुकिंग पाठवा",
+        loc_tag: "आमच्या स्टुडिओला भेट द्या"
+      }
+    };
+
+    function renderGallery() {
+      const grid = document.getElementById("gallery-grid");
+      const filtered = activeFilter === "all"
+        ? blouseDesigns
+        : blouseDesigns.filter(item => item.category === activeFilter);
+
+      grid.innerHTML = filtered.map(item => {
+        const title = currentLang === "mr" ? item.title_mr : item.title_en;
+        const desc = currentLang === "mr" ? item.desc_mr : item.desc_en;
+        const imgUrl = `https://lh3.googleusercontent.com/d/${item.fileId}`;
+        const waMsg = encodeURIComponent(`Hello Smarnika Ladies Tailoring, I liked Blouse Design #${item.id} (${item.title_en} - ${item.price}) and would like to get it stitched.`);
+
+        return `
+          <article class="group rounded-3xl overflow-hidden bg-ivory border border-gold/35 shadow-card hover:shadow-boutique transition flex flex-col justify-between">
+            <div>
+              <div class="relative aspect-[4/5] bg-cream overflow-hidden cursor-pointer" onclick="openLightbox('${item.id}')">
+                <img
+                  src="${imgUrl}"
+                  alt="${title}"
+                  loading="lazy"
+                  class="w-full h-full object-cover transition duration-700 group-hover:scale-105"
+                  onerror="handleDriveImgError(this, '${item.fileId}', 'Design #${item.id}');"
+                />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-plumDark/85 text-ivory text-xs font-bold">#${item.id}</span>
+                <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-ivory/95 text-plum font-bold text-xs shadow">${item.price}</span>
+              </div>
+              <div class="p-4 space-y-1.5">
+                <h3 class="font-display text-xl font-bold text-plumDark leading-snug cursor-pointer hover:text-burgundy" onclick="openLightbox('${item.id}')">${title}</h3>
+                <p class="text-xs text-muted line-clamp-2 leading-relaxed">${desc}</p>
+              </div>
+            </div>
+            <div class="px-4 pb-4 pt-1 flex items-center gap-2">
+              <button type="button" onclick="openLightbox('${item.id}')" class="flex-1 py-2 px-3 rounded-xl bg-cream hover:bg-blush/50 text-plumDark text-xs font-semibold transition">
+                ${currentLang === "mr" ? "तपशील पहा" : "View Details"}
+              </button>
+              <a href="https://wa.me/919321784626?text=${waMsg}" target="_blank" rel="noopener noreferrer" class="py-2 px-3.5 rounded-xl bg-plum hover:bg-burgundy text-ivory text-xs font-semibold transition">
+                💬 ${currentLang === "mr" ? "ऑर्डर" : "Enquire"}
+              </a>
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function openLightbox(id) {
+      const item = blouseDesigns.find(b => b.id === id);
+      if (!item) return;
+      const title = currentLang === "mr" ? item.title_mr : item.title_en;
+      const desc = currentLang === "mr" ? item.desc_mr : item.desc_en;
+      const imgEl = document.getElementById("lb-img");
+      imgEl.dataset.fbStep = "0";
+      imgEl.onerror = function() { handleDriveImgError(this, item.fileId, `Design #${item.id}`); };
+      imgEl.src = `https://lh3.googleusercontent.com/d/${item.fileId}`;
+      document.getElementById("lb-badge").textContent = `Design #${item.id}`;
+      document.getElementById("lb-title").textContent = title;
+      document.getElementById("lb-price").textContent = item.price;
+      document.getElementById("lb-desc").textContent = desc;
+      const waMsg = encodeURIComponent(`Hello Smarnika Ladies Tailoring, I want to book Blouse Design #${item.id} (${item.title_en} - ${item.price}).`);
+      document.getElementById("lb-wa").href = `https://wa.me/919321784626?text=${waMsg}`;
+      document.getElementById("lightbox").classList.remove("hidden");
+    }
+
+    function closeLightbox(e) {
+      if (!e || e.target.id === "lightbox") {
+        document.getElementById("lightbox").classList.add("hidden");
+      }
+    }
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.getElementById("btn-en").className = lang === "en"
+        ? "px-3 py-1 rounded-full bg-plum text-ivory transition"
+        : "px-3 py-1 rounded-full text-charcoal hover:text-plum transition";
+      document.getElementById("btn-mr").className = lang === "mr"
+        ? "px-3 py-1 rounded-full bg-plum text-ivory transition font-marathi"
+        : "px-3 py-1 rounded-full text-charcoal hover:text-plum transition font-marathi";
+
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[lang] && translations[lang][key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      renderGallery();
+    }
+
+    function updateEstimate() {
+      const select = document.getElementById("est-service");
+      const base = parseInt(select.value, 10) || 0;
+      const serviceName = select.options[select.selectedIndex].getAttribute("data-name");
+      const qty = Math.max(1, parseInt(document.getElementById("est-qty").value, 10) || 1);
+
+      let addonTotal = 0;
+      const addonNames = [];
+      document.querySelectorAll(".est-addon:checked").forEach(cb => {
+        addonTotal += parseInt(cb.value, 10) || 0;
+        addonNames.push(cb.getAttribute("data-label"));
+      });
+
+      const homePickup = document.getElementById("est-home").checked;
+      const total = (base + addonTotal) * qty;
+
+      document.getElementById("est-total").textContent = `₹${total}`;
+      let summary = `${qty} × ${serviceName} (₹${base} each)`;
+      if (addonNames.length) summary += ` + ${addonNames.join(", ")}`;
+      if (homePickup) summary += ` • Home Pickup Requested`;
+      document.getElementById("est-breakdown").textContent = summary;
+
+      const waText = encodeURIComponent(
+        `Hello Smarnika Ladies Tailoring,\nI checked an estimate on your website:\n• ${summary}\n• Estimated Total: ₹${total}\nPlease let me know available timings.`
+      );
+      document.getElementById("est-wa-link").href = `https://wa.me/919321784626?text=${waText}`;
+    }
+
+    function preselectService(serviceLabel) {
+      const sel = document.getElementById("bk-service");
+      for (let i = 0; i < sel.options.length; i++) {
+        if (sel.options[i].value === serviceLabel) {
+          sel.selectedIndex = i;
+          break;
+        }
+      }
+    }
+
+    function submitWhatsAppBooking(e) {
+      e.preventDefault();
+      const name = document.getElementById("bk-name").value.trim();
+      const phone = document.getElementById("bk-phone").value.trim();
+      const service = document.getElementById("bk-service").value;
+      const mode = document.getElementById("bk-mode").value;
+      const notes = document.getElementById("bk-notes").value.trim();
+
+      const msg = encodeURIComponent(
+        `Hello Smarnika Ladies Tailoring,\nI would like to book an appointment:\n• Name: ${name}\n• Mobile: ${phone}\n• Service: ${service}\n• Preference: ${mode}${notes ? `\n• Notes: ${notes}` : ""}`
+      );
+      window.open(`https://wa.me/919321784626?text=${msg}`, "_blank", "noopener,noreferrer");
+    }
+
+    function updateStudioStatus() {
+      const badge = document.getElementById("studio-status");
+      if (!badge) return;
+      const now = new Date();
+      const istOffset = 5.5 * 60;
+      const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+      const ist = new Date(utc + istOffset * 60000);
+      const hour = ist.getHours();
+      const isOpen = hour >= 10 && hour < 21;
+      badge.textContent = isOpen ? "Open Now" : "Opens 10:00 AM";
+      badge.className = isOpen
+        ? "px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-semibold"
+        : "px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 font-semibold";
+    }
+
+    document.getElementById("gallery-filters").addEventListener("click", e => {
+      const btn = e.target.closest(".filter-btn");
+      if (!btn) return;
+      document.querySelectorAll(".filter-btn").forEach(b => {
+        b.classList.remove("active");
+        b.classList.add("bg-ivory", "text-charcoal");
+      });
+      btn.classList.add("active");
+      btn.classList.remove("bg-ivory", "text-charcoal");
+      activeFilter = btn.getAttribute("data-filter");
+      renderGallery();
+    });
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+    updateStudioStatus();
+    updateEstimate();
+    renderGallery();
+  </script>
+</body>
+</html>
